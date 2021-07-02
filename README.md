@@ -23,7 +23,9 @@ Dev exposes API through which you could do a lot of things. I am currently only 
 - Also, I am persisting the json payload of the article with the id populated.
 
 ### Next steps
-- Leverage the created json file to update blog posts if there are changes
+- Identify new files and modified markdown files
+- For new files, create new articles
+- For modified, update the articles
 
 
 ### Thanks
@@ -31,3 +33,5 @@ Dev exposes API through which you could do a lot of things. I am currently only 
 - [Stefan Zweifel](https://github.com/stefanzweifel/git-auto-commit-action) - Committing the changes file from a workflow
 - [Maxime](https://dev.to/maxime1992/manage-your-dev-to-blog-posts-from-a-git-repo-and-use-continuous-deployment-to-auto-publish-update-them-143j) - For the triggering a thought
 
+### Bugs/Changes
+Please modify any typos or corrections and create a pull request to make this better.
