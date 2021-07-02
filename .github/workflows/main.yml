@@ -25,14 +25,16 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - uses: jitterbit/get-changed-files@v1
+      - id: files
+      - uses: Ana06/get-changed-files@v1.2
         with:
           format: 'csv'
+          filter: '*.md'
       - run: |
-            mapfile -d ',' -t added_modified_files < <(printf '%s,' '${{ steps.files.outputs.added_modified }}')
-            for added_modified_file in "${added_modified_files[@]}"; do
-              echo "Do something with this ${added_modified_file}."
-            done
+          mapfile -d ',' -t added_modified_files < <(printf '%s,' '${{ steps.files.outputs.added_modified }}')
+          for added_modified_file in "${added_modified_files[@]}"; do
+            echo "Do something with this ${added_modified_file}."
+          done
       
 
       # Runs a single command using the runners shell
