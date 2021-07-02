@@ -47,7 +47,7 @@ jobs:
           files="${{ steps.files.outputs.added_modified }}"
           if [[ ${#files} -gt 0 ]]; then
             echo "Publishing articles to Dev.to"
-            for added_modified_file in "${{ steps.files.outputs.added_modified }}"; do
+            for added_modified_file in "${files[@]}"; do
               echo "Do something with this ${added_modified_file}."
               python scripts/publishtodev.py ${added_modified_file}
             done
