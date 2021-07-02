@@ -10,7 +10,7 @@ def get_front_matter_from_md_file(path):
     post = frontmatter.load(path)
     keys = post.keys()
 
-    with open('article-template.json') as article_template:
+    with open(os.path.join(os.path.dirname(__file__), 'article-template.json')) as article_template:
         article = json.load(article_template)
         actual_article = article['article']
 
@@ -40,12 +40,12 @@ def main():
     id = publish_to_dev(article)
     result = json.loads(article)
     result['article']['id'] = id
-    published_article = file_path.replace(".md",".json")
+    published_article = file_path.replace(".md", ".json")
     with open(published_article, 'w') as outfile:
         json.dump(result, outfile)
     print(f'Article posted to Dev.to and ID is: {id}')
     print(f'Published file: {published_article}')
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     main()
