@@ -44,13 +44,24 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: execute py script
         run: |
-          for added_modified_file in "${{ steps.files.outputs.added_modified }}"; do
-            echo "Do something with this ${added_modified_file}."
-            python scripts/publishtodev.py ${added_modified_file}
-          done
-          
+          files = ${{ steps.files.outputs.added_modified }}
+          if [[ ${#files} -gt 0 ]]; then
+            echo "Publishing articles to Dev.to"
+            for added_modified_file in "${{ steps.files.outputs.added_modified }}"; do
+              echo "Do something with this ${added_modified_file}."
+              python scripts/publishtodev.py ${added_modified_file}
+            done
+          else
+            echo "No posts to publish"
+          fi
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
           echo ${{ steps.files.outputs.added_modified }}
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          # Optional, but recommended
+          # Defaults to "Apply automatic changes"
+          commit_message: Article published and id updated

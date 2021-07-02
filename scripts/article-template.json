@@ -1,6 +1,7 @@
 {
   "article": {
     "title": "Hello, World!",
+    "id": "",
     "description": "",
     "published": false,
     "body_markdown": "Hello DEV, this is my first post",
