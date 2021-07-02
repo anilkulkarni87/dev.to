@@ -1,6 +1,6 @@
 ---
 published: false
-title: "Your title2 deployed through GIT V1"
+title: "Your title2 deployed through GIT V1 V2"
 cover_image: "https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/master/blog-posts/NAME-OF-YOUR-BLOG-POST/assets/your-asset.png"
 description: "Description of the article"
 tags: tag1,tag2,tag3
@@ -8,7 +8,7 @@ series:
 canonical_url: ""
 ---
 
-This is an example of how to structure a blog post.
+This is an example of how to structure a blog post. This is the greatest of all 
 
 The thing above delimited by `---` is called a "front matter" and it allows us to keep control over our article in a very easy way. Just edit it with your own data and CI will handle the rest to publish it to dev.to!
 
