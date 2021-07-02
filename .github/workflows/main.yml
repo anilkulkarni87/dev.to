@@ -30,11 +30,6 @@ jobs:
         with:
           format: 'csv'
           filter: '*.md'
-      - run: |
-          mapfile -d ',' -t added_modified_files < <(printf '%s,' '${{ steps.files.outputs.added_modified }}')
-#          for added_modified_file in "${added_modified_files[@]}"; do
- #           echo "Do something with this ${added_modified_file}."
-  #        done
       - uses: actions/setup-python@v2
         with:
           python-version: 3.8 
@@ -56,11 +51,6 @@ jobs:
           else
             echo "No posts to publish"
           fi
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo ${{ steps.files.outputs.added_modified }}
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
