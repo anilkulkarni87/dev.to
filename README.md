@@ -14,6 +14,8 @@ This is a template repo which where I am testing and building solution for autom
 
 Dev exposes API through which you could do a lot of things. I am currently only creating articles which will be in your drafts. 
 
+#### TODO: Insert a diagram here
+
 ## Approach
 - Clone this repo, cleanup the files and arrange your blog posts.
 - Create a markdown file for your blog post. You can check the folder structure in the repo.
