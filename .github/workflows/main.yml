@@ -44,6 +44,7 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: execute py script
         run: |
+          IFS=","
           files="${{ steps.files.outputs.added_modified }}"
           if [[ ${#files} -gt 0 ]]; then
             echo "Publishing articles to Dev.to"
