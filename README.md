@@ -1,2 +1,33 @@
-# my-dev.to
-Github repo for all Dev.to posts
+---
+published: false
+title: "Publish blog posts from GIT to DEV.TO"
+cover_image: ""
+description: "Automate publishing your article from git markdown to dev"
+tags: devto,publication,continuousdeployment
+series:
+canonical_url: ""
+---
+
+# Publish blog posts from GIT to DEV.TO
+
+This is a template repo which where I am testing and building solution for automated publishing of my articles/blog posts to dev. It's just a lot of work to post the same article across places and hence I decided to automate publishing my posts to dev and eventually any other personal blogs.
+
+Dev exposes API through which you could do a lot of things. I am currently only creating articles which will be in your drafts. 
+
+## Approach
+- Clone this repo, cleanup the files and arrange your blog posts.
+- Create a markdown file for your blog post. You can check the folder structure in the repo.
+- Setup your DEV TOKEN in your repo with the name as `GIT_TO_DEV`
+- Commit the changes made to your .md files.
+- Voila after the workflow is complete, you can see the blog posts created in draft. 
+- Also, I am persisting the json payload of the article with the id populated.
+
+### Next steps
+- Leverage the created json file to update blog posts if there are changes
+
+
+### Thanks
+- [Ana María Martínez Gómez](https://github.com/Ana06/get-changed-files) - Tracking changed files
+- [Stefan Zweifel](https://github.com/stefanzweifel/git-auto-commit-action) - Committing the changes file from a workflow
+- [Maxime](https://dev.to/maxime1992/manage-your-dev-to-blog-posts-from-a-git-repo-and-use-continuous-deployment-to-auto-publish-update-them-143j) - For the triggering a thought
+
