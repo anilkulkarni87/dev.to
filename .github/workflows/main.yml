@@ -26,7 +26,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - id: files
-      - uses: Ana06/get-changed-files@v1.2
+        uses: Ana06/get-changed-files@v1.2
         with:
           format: 'csv'
           filter: '*.md'
