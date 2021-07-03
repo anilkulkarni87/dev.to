@@ -32,7 +32,7 @@ jobs:
         uses: Ana06/get-changed-files@v1.2
         with:
           format: 'csv'
-          filter: '*blog-posts*.md'
+          filter: '*log-posts*.md'
       - uses: actions/setup-python@v2
         with:
           python-version: 3.8 
