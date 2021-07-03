@@ -1,7 +1,7 @@
 ---
 published: false
 title: "Publish blog posts from GIT to DEV.TO"
-cover_image: ""
+cover_image: "https://user-images.githubusercontent.com/10644132/124338461-f7744b00-db5c-11eb-8047-eb073cc632f3.png"
 description: "Automate publishing your article from git markdown to dev"
 tags: devto,publication,continuousdeployment
 series:
