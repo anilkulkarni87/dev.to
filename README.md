@@ -8,6 +8,12 @@ series:
 canonical_url: ""
 ---
 
+<div align="center">
+
+[![Actions Status](https://github.com/anilkulkarni87/dev.to/workflows/CI/badge.svg)](https://github.com/anilkulkarni87/dev.to/actions)
+
+</div>
+
 # Publish blog posts from GIT to DEV.TO
 
 This is a template repo which where I am testing and building solution for automated publishing of my articles/blog posts to dev. It's just a lot of work to post the same article across places and hence I decided to automate publishing my posts to dev and eventually any other personal blogs.
