@@ -14,7 +14,8 @@ This is a template repo which where I am testing and building solution for autom
 
 Dev exposes API through which you could do a lot of things. I am currently only creating articles which will be in your drafts. 
 
-#### TODO: Insert a diagram here
+![image](https://user-images.githubusercontent.com/10644132/124338461-f7744b00-db5c-11eb-8047-eb073cc632f3.png)
+
 
 ## Approach
 - Clone this repo, cleanup the files and arrange your blog posts.
