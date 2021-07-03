@@ -35,6 +35,7 @@ Dev exposes API through which you could do a lot of things. I am currently only 
 - [Ana María Martínez Gómez](https://github.com/Ana06/get-changed-files) - Tracking changed files
 - [Stefan Zweifel](https://github.com/stefanzweifel/git-auto-commit-action) - Committing the changes file from a workflow
 - [Maxime](https://dev.to/maxime1992/manage-your-dev-to-blog-posts-from-a-git-repo-and-use-continuous-deployment-to-auto-publish-update-them-143j) - For the triggering a thought
+- [Chris Amico](https://github.com/eyeseast/python-frontmatter) - For formatting front matter from Readme file
 
 ### Bugs/Changes
 Please modify any typos or corrections and create a pull request to make this better.
