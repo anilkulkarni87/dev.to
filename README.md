@@ -35,6 +35,7 @@ Dev exposes API through which you could do a lot of things. I am currently only 
 - Identify new files and modified markdown files
 - For new files, create new articles
 - For modified, update the articles
+    - Read the json and call the Update api
 
 
 ### Thanks
